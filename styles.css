@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.5;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.report {
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    max-width: 600px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

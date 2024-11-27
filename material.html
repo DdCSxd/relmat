@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matérial para prode</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Matérial para prode</h1>
+    <form id="materialForm">
+        <div class="item">
+            <label><input type="checkbox" id="mms"> MMS</label>
+            <input type="text" class="hidden" id="mmsId" placeholder="Número de identificação">
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="legend"> Legend</label>
+            <input type="text" class="hidden" id="legendId" placeholder="Número de identificação">
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="tandem"> Tandem</label>
+            <input type="text" class="hidden" id="tandemId" placeholder="Número de identificação">
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="g13"> G13</label>
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="t10as"> T10 AS</label>
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="mc1"> MC1</label>
+            <input type="text" class="hidden" id="mc1Id" placeholder="Número de identificação">
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="t10r"> T10R</label>
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="rac"> RAC</label>
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="capaceteGrande"> Capacete Grande Alt</label>
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="capaceteZx"> Capacete ZX</label>
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="altitrack"> Altímetro Altitrack</label>
+            <input type="text" class="hidden" id="altitrackId" placeholder="Número de identificação">
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="viso2"> Altímetro Viso II</label>
+            <input type="text" class="hidden" id="viso2Id" placeholder="Número de identificação">
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="galaxy"> Altímetro Galaxy</label>
+            <input type="text" class="hidden" id="galaxyId" placeholder="Número de identificação">
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="bolsaPlaquetas"> Bolsa com Plaquetas de Identificação</label>
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="quadrosIdentificacao"> Quadros de Identificação</label>
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="suportesParaquedas"> Suportes de Paraquedas</label>
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="mesa"> Mesa</label>
+            <input type="number" class="hidden" id="mesaQuantidade" placeholder="Quantidade">
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="t10Ornamentacao"> T10 Ornamentação</label>
+            <input type="number" class="hidden" id="t10OrnamentacaoQuantidade" placeholder="Quantidade">
+        </div>
+        <div class="item">
+            <label><input type="checkbox" id="piriquitoOrnamentacao"> Piriquito Ornamentação</label>
+            <input type="number" class="hidden" id="piriquitoOrnamentacaoQuantidade" placeholder="Quantidade">
+        </div>
+        <button type="button" onclick="generateReport()">Gerar Relatório</button>
+    </form>
+    <textarea id="output" class="hidden" readonly></textarea>
+    <button id="copyButton" class="hidden" onclick="copyToClipboard()">Copiar Relatório</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
