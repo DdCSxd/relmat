@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Matérial para prode</h1>
+    <h1 class="titulo"> <img class="aux" src="breve_sem_fundo.jpg" alt="aux"></a>Matérial para prode <img class="aux" src="breve_sem_fundo.jpg" alt="aux"></h1>
     <form id="materialForm">
         <div class="item">
             <label><input type="checkbox" id="mms"> MMS</label>
@@ -76,11 +76,29 @@
             <label><input type="checkbox" id="piriquitoOrnamentacao"> Piriquito Ornamentação</label>
             <input type="number" class="hidden" id="piriquitoOrnamentacaoQuantidade" placeholder="Quantidade">
         </div>
-        <button type="button" onclick="generateReport()">Gerar Relatório</button>
+        
+        
+        
+        <div id="newItemSection" >
+            <div class="item">
+                <label for="newItemName">Outros Matérias:</label>
+                <input type="text" id="newItemName" placeholder="Nome do item">
+            </div>
+            <div class="item">
+                <label for="newItemId">Número de identificação:</label>
+                <input type="text" id="newItemId" placeholder="Número de identificação">
+            </div>
+            <button type="button" id="saveNewItemButton">Criar item</button>
+        </div>
+        
+        <button class="hidden" type="button" onclick="generateReport()">Gerar Relatório</button>
+        <textarea id="output" class="hidden" readonly></textarea>
+        <button id="copyButton" class="hidden" onclick="copyToClipboard()">Copiar Relatório</button>
+        <div class="item">
+            <button class="sum"  type="button" id="addItemButton"></button>
+        </div>
     </form>
-    <textarea id="output" class="hidden" readonly></textarea>
-    <button id="copyButton" class="hidden" onclick="copyToClipboard()">Copiar Relatório</button>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
