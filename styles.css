@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap");
 
 .aux {
-    width: 1%;  /* Largura da imagem */
-    height: 1%; /* Altura da imagem */
+    width: 30px;  /* Largura da imagem */
+    height: 30px; /* Altura da imagem */
 }
 .titulo {
     font-family: "Bebas Neue", "sans-serif";
